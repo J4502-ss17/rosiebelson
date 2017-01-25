@@ -20,9 +20,8 @@
       <p>A joke will go here</p>
 
       <ul>
-          <li><a href="http://www.apple.com">a link to Apple's website</a></li>
-          <li><a href="http://wwww.google.com">A link to Google's website</a></li>
-          <li><a href="index2.html">A link to my second website page</a></li>
+          <li>Bird</li>
+          <li>Bird</li>
           <li>Bird</li>
           <li>Bird</li>
       </ul>
@@ -31,9 +30,7 @@
 
       <a href="http://www.google.com">A link to Google's website</a>
 
-      <a href="index2.html">A link to my second website page</a>
-      <img src="Pic.jpg" alt="A picture of Rosie."/>
-
+      <a href="http://www.bing.com">A link to Bing's website</a>
 </body>
 
 </html>
