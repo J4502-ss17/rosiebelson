@@ -6,14 +6,16 @@ p {
 }
 
 h1{
+  color: #6faaed;
   font-family: Georgia, "Times New Roman", serif;
 }
 
 body {
-  background-color: #ebe3c3;
+  background-color: #e2f7ff;
 }
 
 #container {
+  text-align: center;
   width: 95%;
   /*margin-top: 0;
   margin-right: auto;
@@ -38,7 +40,7 @@ body {
 #nav a:link, #nav a:visited {
   display: block;
   color: #ffffff;
-  background-color: #98bf21;
+  background-color: #6faaed;
   font-weight: bold;
   text-align:center;
   text-decoration: none;
@@ -46,9 +48,13 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+#secondlink a:link, #nav a:visited {
+  text-decoration: none;
+}
+
 #nav a:hover, #nav a:active {
   /*id*/
-  background-color: #7a991a;
+  background-color: #002c9b;
 }
 
 .caption{
@@ -67,6 +73,7 @@ body {
   font-size: 0.8em;
   border-top: 1px solid black;
 }
+
 img {
   /*tag*/
   border: none;
