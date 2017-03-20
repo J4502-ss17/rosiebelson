@@ -2,6 +2,29 @@
   Flexbox
 ==================================== */
 
+/*.container {
+	display: flex;
+	height: 75vh;
+	justify-content: center;
+}
+
+.item {
+	align-self: center;
+}*/
+
+
+/*.container {
+	display: flex;
+	height: 75vh;
+	justify-content: center;
+	align-items: center;
+}*/
+
 .container {
 	display: flex;
+	height: 75vh;
+}
+
+.item {
+	margin: auto;
 }

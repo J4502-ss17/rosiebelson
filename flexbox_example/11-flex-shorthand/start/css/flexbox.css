@@ -4,4 +4,13 @@
 
 .container {
 	display: flex;
+	height: 300px;
+}
+
+.item{
+	flex: 1 300px;
+}
+
+.item-2{
+	flex-grow: 2;
 }

@@ -4,4 +4,14 @@
 
 .container {
 	display: flex;
+	height: 300px;
+	flex-wrap: wrap;
+}
+
+.item {
+	flex-grow: 1;
+}
+
+.item-2{
+	flex-grow: 2;
 }
