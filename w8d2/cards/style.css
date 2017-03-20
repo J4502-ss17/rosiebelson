@@ -82,7 +82,7 @@ nav ul li a {
     border-radius: 5%;
     margin-left: 0.5em;
     height: 3em;
-    width: 3em; 
+    width: 3em;
 }
 
 
@@ -110,14 +110,44 @@ img {
 Cards example specific styles
 ==================================*/
 
+.card {
+  border: 1px solid gray;
+  box-shadow: 1px 1px 3px #888;
+  border-top: 10px solid #bd5532;
+  padding: 0;
+  margin: 10px;
+}
+
+.card p{
+    padding: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-flow: column;
+}
 @media screen and (min-width: 600px) {
 
     #container {
         width: 80%;
     }
+
+    .card-container{
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .card {
+      width: 45%;
+    }
 }
 
 @media screen and (min-width: 800px) {
+
+  .card{
+    width: 30%;
+  }
 
     #container {
         width: 70%;

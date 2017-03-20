@@ -20,7 +20,20 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2em;
     margin-top: 0.5em;
-}
+    color: white;
+    background: #bd5532;
+    background-image: url("img/wp.png"); background-size: 100% auto;
+    padding-top: 60px;
+    padding-left: 60px;
+    width: 100vw;
+  }
+
+  header {
+    background: #bd5532;
+    background-image: url("img/wp.png");
+    background-size: cover;
+    padding: 2em;
+  }
 
 h2 {
     font-size: 1.5em;
@@ -110,12 +123,20 @@ img {
 Full screen background example specific styles
 ============================================*/
 
+/*.cover{
+  margin-top: -65px;
+  position: relative;
+  z-index: -10;
+}*/
+
 @media screen and (min-width: 600px) {
 
     #container {
         width: 80%;
     }
 }
+
+.article-2, .article-4
 
 @media screen and (min-width: 800px) {
 
