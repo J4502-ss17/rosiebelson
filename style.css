@@ -1,52 +1,48 @@
-/*styles go here*/
+/*Typography*/
 html {
 	font-size: 100%;
 }
 
-p {
-  color: #666666;
-  font-family: 'Droid Serif', Georgia, "Times New Roman", serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
+body {
+	font-family: "Droid Serif", Georgia, "Times New Roman", serif;
+	background-color: #e2f7ff;
 }
 
-.italic {
-	font-style: italic;
-}
-
-h1{
-  color: #6faaed;
+h1 {
+	font-size: 2em;
+	color: #6faaed;
   font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
 }
 
-body {
-  background-color: #e2f7ff;
+p {
+	color: #666666;
+  font-family: 'Droid Serif', Georgia, "Times New Roman", serif;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
-#container {
-  text-align: center;
-  width: 95%;
-  /*margin-top: 0;
-  margin-right: auto;
-  margin-bottom: 0;
-  margin-left: auto;*/
-  /*margin: 0 auto 0 auto;*/
-  margin: 0 auto;
+article {
+	width: 90%;
+	margin: 0 auto;
 }
 
-#nav {
-  padding: 0;
-  list-style-type: none;
+/*Navigation styles*/
+.navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+flex-flow: column;
 }
 
-#nav li {
+.navigation li {
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
 }
 
-#nav a:link, #nav a:visited {
+.navigation a:link, .navigation a:visited {
   display: block;
   color: #ffffff;
   background-color: #6faaed;
@@ -57,33 +53,102 @@ body {
   font-family: "Droid Sans Mono", Arial, sans-serif;
 }
 
-#secondlink a:link, #nav a:visited {
+#secondlink a:link, .navigation a:visited {
   text-decoration: none;
 }
 
-#nav a:hover, #nav a:active {
-  /*id*/
+.navigation a:hover, .navigation a:active {
   background-color: #002c9b;
 }
 
-.caption{
-  color: black;
-  font-family: "Droid Serif", "Times New Roman", serif;
-  margin-top: 0;
-  font-style: italic;
-  font-size: 0.8em;
-  text-align: right;
+.navigation li:last-of-type a{
+  border-bottom: none;
 }
-/* class*/
-
-#footer {
-  color: black;
-  font-family: "Droid Serif", "Times New Roman", serif;
-  font-size: 0.8em;
-  border-top: 1px solid black;
-}
+/*Image width*/
 
 img {
-  /*tag*/
+	width: 45%;
   border: none;
+	margin-right: 10px;
+
 }
+
+/*Colors for different parts of page */
+
+/*Setting up flexible boxes for our content*/
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+header, article, body, aside, footer {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+
+/*These styles activate when the page is larger than 800px wide*/
+
+@media (min-width:800px) {
+
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+    	background: #002c9b;
+    }
+
+    .aside-1 {
+        flex: 1 auto;
+    }
+
+    article {
+		flex: 3 0px;
+	}
+
+    .aside-1 {
+        order: 2;
+    }
+
+    article {
+        order: 1;
+    }
+
+
+    footer {
+        order: 3;
+    }
+	}
+
+	/*These styles apply to the Flexbox image technique */
+
+	article {
+			display: flex;
+			flex-flow: row;
+			flex-wrap: wrap;
+	}
+
+    /*This code is for the first image attempt -- the object-fit property*/
+
+		.image {
+				width: 45%;
+				float: right;
+				margin-right: 5px;
+		}
+
+		.story {
+				width: 45%;
+		}
+
+		.first {
+        margin-top: 0;
+    }
+
+	}
