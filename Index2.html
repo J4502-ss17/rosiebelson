@@ -15,3 +15,101 @@
 </body>
 
 </html>
+
+
+.navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+flex-flow: column;
+}
+
+.navigation li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.navigation a:link, .navigation a:visited {
+  display: block;
+  color: #ffffff;
+  background-color: #6faaed;
+  font-weight: bold;
+  text-align:center;
+  text-decoration: none;
+  padding: 4px;
+  font-family: "Droid Sans Mono", Arial, sans-serif;
+}
+
+
+
+/*These styles activate when the page is larger than 800px wide*/
+
+@media (min-width:800px) {
+
+    .navigation {
+        flex-flow: row wrap;
+        justify-content: flex-end;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    .navigation a:hover {
+    	background: #002c9b;
+    }
+
+    .aside-1 {
+        flex: 1 auto;
+    }
+
+    article {
+		flex: 3 0px;
+	}
+
+    .aside-1 {
+        order: 2;
+    }
+
+    article {
+        order: 1;
+    }
+
+
+    footer {
+        order: 3;
+    }
+	}
+
+	/*These styles apply to the Flexbox image technique */
+
+	article {
+			display: flex;
+			flex-flow: row;
+			flex-wrap: wrap;
+	}
+
+    /*This code is for the first image attempt -- the object-fit property*/
+
+		.image {
+				width: 45%;
+				float: right;
+				margin-right: 5px;
+		}
+
+		.story {
+				width: 45%;
+		}
+
+		.first {
+        margin-top: 0;
+    }
+
+    img {
+    	width: 45%;
+      border: none;
+    	margin-right: 10px;
+    }

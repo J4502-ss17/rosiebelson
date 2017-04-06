@@ -101,15 +101,28 @@ a:hover {
     color: #bd5532;
 }
 
+img, .caption {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
 
     #container {
         width: 80%;
     }
 
+    img, .caption{
+      display: block;
+    }
+
 }
 
 @media screen and (min-width: 800px) {
+
+  #bar {
+    background-color: #ADD8E6;
+    padding: 10px;
+  }
 
     #container {
         width: 70%;
