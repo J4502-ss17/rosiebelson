@@ -78,7 +78,7 @@ nav ul {
 
 nav ul li {
     list-style-type: none;
-    padding: 0;
+    padding: 3px;
     margin: 0;
 		border-bottom: 1px solid #ccc;
 		margin-bottom: 10px;
@@ -101,7 +101,7 @@ nav ul li a {
     align-items: baseline;
     justify-content: space-between;
     margin-bottom: 0.7em;
-    border-bottom: 1px solid #ccc;
+    /*border-bottom: 1px solid #ccc;*/
 }
 
 .logo {
@@ -160,14 +160,39 @@ img{
     flex-flow: row wrap;
 }
 
-header, article, body, aside, footer, img {
+article, body, aside, footer, img {
   flex: 1 100%;
   padding: 10px;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  background-color: #65A886;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.menu-trigger {
+  order: 1;
+}
+
+header h1 {
+  order: 2;
+  font-size: 2em;
+}
+
+nav ul {
+  display: none;
 }
 
 @media screen and (min-width: 600px) {
 
     #container {
+        width: 80%;
+    }
+
+		#imgcont {
         width: 80%;
     }
 
@@ -185,9 +210,15 @@ header, article, body, aside, footer, img {
 
 
 		header {
-	    flex: 1 auto;
-	    justify-content: flex-start;
+			display: flex;
+		  flex-flow: row;
+		  margin: 0;
+		  padding: 0 10px;
 	  }
+
+		/*.menu-trigger {
+		  order: 1;
+		}*/
 
 	  h1 {
 	    text-align: left;
@@ -224,17 +255,41 @@ header, article, body, aside, footer, img {
 	    /*margin-right: 20px;*/
 	    padding: 10px;
 	  }
+
+		nav ul {
+	    display: flex;
+	  }
+
+	  nav ul li {
+	    border-top: none;
+	  }
+
+	  header h1 {
+	    order: 1;
+	  }
+
+	  nav {
+	    order: 2;
+	  }
+
+	  .menu-trigger {
+	    display: none;
+	  }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
 
     #container {
         width: 70%;
         max-width: 60em;
     }
 
+		#imgcont {
+        width: 70%;
+        /*max-width: 60em;*/
+    }
+
     #bar {
-        background-color: #ADD8E6;
         padding: 10px;
     }
 
@@ -243,11 +298,24 @@ header, article, body, aside, footer, img {
         margin-left: 5em;
     }
 
-    nav ul {
-        justify-content: flex-end;
-    }
+		nav ul {
+	    display: flex;
+	  }
 
-    nav ul li {
-        margin-left: 1.8em;
-    }
+	  nav ul li {
+	    border-top: none;
+	  }
+
+	  header h1 {
+	    order: 1;
+	  }
+
+	  nav {
+	    order: 2;
+	  }
+
+	  .menu-trigger {
+	    display: none;
+	  }
+
 }
