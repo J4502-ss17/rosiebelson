@@ -7,6 +7,20 @@ body {
     line-height: 1.45em;
 }
 
+.map-wrapper {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-wrapper iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 #container {
     width: 95%;
     margin: 0 auto;
@@ -109,6 +123,7 @@ nav ul li a {
     margin-left: 0.5em;
     height: 3em;
 }
+
 
 
 footer {
@@ -275,6 +290,21 @@ nav ul {
 	  .menu-trigger {
 	    display: none;
 	  }
+
+		.map-wrapper {
+		    overflow:hidden;
+		    padding-bottom:56.25%;
+		    position:relative;
+		    height:0;
+		}
+
+		.map-wrapper iframe{
+		    left:0;
+		    top:0;
+		    height:100%;
+		    width:100%;
+		    position:absolute;
+		}
 }
 
 @media screen and (min-width: 700px) {
@@ -317,5 +347,20 @@ nav ul {
 	  .menu-trigger {
 	    display: none;
 	  }
+
+		.map-wrapper {
+		    overflow:hidden;
+		    padding-bottom:56.25%;
+		    position:relative;
+		    height:0;
+		}
+
+		.map-wrapper iframe{
+		    left:0;
+		    top:0;
+		    height:100%;
+		    width:100%;
+		    position:absolute;
+		}
 
 }
